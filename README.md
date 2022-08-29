@@ -1,6 +1,12 @@
 # photocatalyst-TDDFT-benchmark
 
-The scripts can be used to generate the database from the Gaussian or ORCA outputs located in the subfolders named after the molecules in the benchmark set. It extracts the excitations from the output files of excited state calculations and fits Gaussians using bandwidth and linear scaling factor parameters. The fitting is performed with respect to the reference spectra located in each subdirectory. The details about the process is reported in our paper (DOI: tbd).
+The scripts can be used to generate the database from the Gaussian or ORCA outputs located in the subfolders named after the molecules in the benchmark set. The approach is reported in our paper (DOI: tbd) and it includes the following steps:
+
+1. excitation energies oscillator strengths are extracted from the output files of excited state calculations 
+2. the extracted stick spectrum is shifted and broadened using a sum of Gaussians with bandwidth and linear scaling factor parameters
+3. the two prameters are optimized until the calculated lineshape offers the best possible fit (can be evaluated using any error metric) to the experimental reference spectrum located in a given subdirectory
+4. the optimized parameters and lineshapes for each molecule/functional/error_metric combination are merged into a database file that can be analyzed using our Jupyter Notebook located in the for_analysis/ subdirectory
+
 
 ## Requirements
 

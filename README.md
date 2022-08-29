@@ -23,4 +23,4 @@ Run `run_optimizer.py` to obtain sub-databases then run `merge_all.py` to get th
 
 ## Analysis
 
-The analysis of the database can be done using the Jupyter Notebook located in the for_analysis/ subdirectory.
+The analysis of the database can be done using the Jupyter Notebook located in the for_analysis/ subdirectory. We recommend using Google Colab here and set up default file paths that work in a cloned git repository.

@@ -4,7 +4,7 @@ The scripts can be used to generate the database from the Gaussian or ORCA outpu
 
 1. excitation energies oscillator strengths are extracted from the output files of excited state calculations 
 2. the extracted stick spectrum is shifted and broadened using a sum of Gaussians with bandwidth and linear scaling factor parameters
-3. the two prameters are optimized until the calculated lineshape offers the best possible fit (can be evaluated using any error metric) to the experimental reference spectrum located in a given subdirectory
+3. the two parameters are optimized until the calculated lineshape offers the best possible fit (can be evaluated using any error metric) to the experimental reference spectrum located in a given subdirectory
 4. the optimized parameters and lineshapes for every molecule/functional/error_metric combination are merged into a database file that can be analyzed using our Jupyter Notebook located in the for_analysis/ subdirectory
 
 

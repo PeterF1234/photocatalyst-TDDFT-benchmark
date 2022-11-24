@@ -13,7 +13,8 @@ def build_filedata(files,outfile,dumpfile,header,workdir='.'):
 
     functionals = ["DSD-BLYP","_B2PLYP","wB2PLYP","STEOM-DLPNO-CCSD",
                    "_B3LYP-D3","CAM-B3LYP-D3","M06_","M062X","M06L",
-                   "PBE-D3","PBE0","wB97XD","TPSS","B97D3","TDHF"]
+                   "PBE-D3","PBE0","wB97XD","TPSS","B97D3","TDHF",
+                   "B2GPPLYP","SCS-PBE-QIDH","wPBEPP86"]
     basis = ["_def2TZVP","_TZVP","_def2SVP","_DEF2-TZVP"]
     # Build the database
     print("Building file data...")
@@ -40,6 +41,10 @@ def build_filedata(files,outfile,dumpfile,header,workdir='.'):
                     G[i].append("B3LYP-D3")
                 elif f == "M06_": # avoid conflict with M062X and M06L
                     G[i].append("M06")
+                elif f == "B2GPPLYP":
+                    G[i].append("B2GP-PLYP")
+                elif f == "wPBEPP86":
+                    G[i].append("$\omega$-PBEPP86")
                 else:
                     G[i].append(f)
         if len(G[i]) != 2:

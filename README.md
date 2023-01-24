@@ -1,6 +1,6 @@
 # photocatalyst-TDDFT-benchmark
 
-The scripts can be used to generate the database from the Gaussian or ORCA outputs located in the subfolders named after the molecules in the benchmark set. The approach is reported in our paper (DOI: tbd, [ChemRxiv](https://doi.org/10.26434/chemrxiv-2022-pfvhc)) and it includes the following steps:
+The scripts can be used to generate the database from the Gaussian or ORCA outputs located in the subfolders named after the molecules in the benchmark set. The approach is reported in our paper ([Chemistry--Methods](https://doi.org/10.1002/cmtd.202200069), [ChemRxiv](https://doi.org/10.26434/chemrxiv-2022-pfvhc-v3)) and it includes the following steps:
 
 1. excitation energies oscillator strengths are extracted from the output files of excited state calculations 
 2. the extracted stick spectrum is shifted and broadened using a sum of Gaussians with bandwidth and linear scaling factor parameters
